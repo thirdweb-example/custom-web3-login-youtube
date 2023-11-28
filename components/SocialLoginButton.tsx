@@ -9,7 +9,7 @@ export const SocialLoginButton = ({ strategy }: SocialLoginProps) => {
     const { connect } = useEmbeddedWallet();
     const connectSmartWallet = useConnect();
     const smartWalletConfig = smartWallet(embeddedWallet(), {
-        factoryAddress: "",
+        factoryAddress: "Your account factory address",
         gasless: true,
     });
 
